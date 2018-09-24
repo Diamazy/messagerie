@@ -1,9 +1,3 @@
-<?php
-if(isset($_GET['page']) && !empty($_GET['page'])){
-    die("ok");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +17,18 @@ if(isset($_GET['page']) && !empty($_GET['page'])){
              <input type="text" nama="pass" placeholder="Password"> <br><br>
              <button style="background-color: #6495ed; color: white;" type="submit"><b>Login</b>
             </button>
+         </form>
+
+         <form action="signup.php" method="post">
+             <h2>dont have an account sign up header_register_callback</h2>
+             <label>Username:</label>
+             <input type="text" name="uname" placeholder="Username"><br><br>
+             <label>Email Add:</label>
+             <input type="text" name="Email" placeholder="Email"><br><br>
+             <label>Password:</label>
+
+             <input type="text" name="Password" placeholder="Username"><br><br>
+
          </form>
      </div>
  </div>
