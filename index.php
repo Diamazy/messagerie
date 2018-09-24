@@ -28,6 +28,8 @@
              <label>Password:</label>
 
              <input type="text" name="Password" placeholder="Username"><br><br>
+             <button style="background-color: #6495ed; color: white;" type="submit"><b>siginup</b>
+            </button>
 
          </form>
      </div>
