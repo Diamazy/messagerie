@@ -3,7 +3,7 @@ body{
 }
 #main{
     height: 450px;
-    background-color: white;
+    background-color: blue;
     margin-top: 100px;
     border-radius: 20px;
 }
