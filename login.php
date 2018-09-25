@@ -16,7 +16,7 @@ if (!$row=$result->fetch_assoc()){
 } else{
     $_SESSION['name']=$_POST['uname'];
 
-    header("Location:homme.php");
+    header("Location:home.php");
 }
 
 ?>
