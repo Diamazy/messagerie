@@ -2,21 +2,21 @@
 session_start();
 include 'dbh.php';
 
-$uname=$_POST['uname'];
-$pass=$_POST['pass'];
+$uname = $_POST['uname'];
+$pass = $_POST['pass'];
 
-
-$sql="SELECT * FROM sigup username='$uname' AND 
+$sql = "SELECT * FROM sigup username='$uname' AND 
 password='$pass'";
-$result=$conn->query($sql);
+$result = $conn->query($sql);
 
+if (!$row = $result->fetch_assoc()) {
+    header('Location:error.php');
+} else {
+    $_SESSION['name'] = $_POST['uname'];
 
-if (!$row=$result->fetch_assoc()){
-    header("Location:error.php");
-} else{
-    $_SESSION['name']=$_POST['uname'];
-
-    header("Location:homme.php");
+    header('Location:homme.php');
 }
 
 ?>
+
+BONJOUR
