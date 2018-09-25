@@ -14,7 +14,7 @@ body{
 input [type=text]{
     width: 260px;
     box-sizing: border-box;
-    border: 2px solid #dc143c;
+    border: 2px solid beige;
     border-radius: 4px;
 }
 
