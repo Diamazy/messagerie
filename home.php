@@ -15,7 +15,8 @@ include 'dbh.php';
 </head>
 <body>
     <div id="main">
-    <h1 style="background-color: #6495ed; color: white;"><?php  $_SESSION['name'] ?>-online</h1>
+    <h1 style="background-color: #6495ed; color: white;"><?php echo  
+    $_SESSION['name']?>-online</h1>
     <div class="output">
         <?php $sql = "SELECT * FROM posts";
         $result = $conn->query($sql);

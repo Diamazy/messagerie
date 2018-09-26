@@ -5,8 +5,8 @@ include 'dbh.php';
 $uname = $_POST['uname'];
 $pass = $_POST['pass'];
 
-$sql = "SELECT * FROM sigup username='$uname' AND 
-password='$pass'";
+$sql = "SELECT * FROM signup WHERE username='$uname' AND password='$pass'";
+//die($sql);
 $result = $conn->query($sql);
 
 if (!$row = $result->fetch_assoc()) {
@@ -18,5 +18,3 @@ if (!$row = $result->fetch_assoc()) {
 }
 
 ?>
-
-BONJOUR

@@ -15,7 +15,7 @@
                 <label> <b>Username</b></label>
                 <input type="text" name="uname" placeholder="User name"><br><br>
                 <label> <b>Password</b></label>
-                <input type="text" nama="pass" placeholder="Password"> <br><br>
+                <input type="text" name="pass" placeholder="Password"> <br><br>
                 <button style="background-color: #6495ed; color: white;" type="submit"><b>Login</b>
             </button>
             </form>
